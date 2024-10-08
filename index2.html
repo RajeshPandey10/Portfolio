@@ -48,9 +48,7 @@
 		<!-- Responsive Style -->
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">									
 	<style>
-		
-
-	body{
+		  body{
 		font-family: "Roboto Condensed", sans-serif;
 	}
 		.image-container {
@@ -70,10 +68,11 @@
     margin: 0 auto;
     position: relative;
   }
-	.image-circle:hover{
+  .image-circle:hover{
     box-shadow: 0 2px 20px 2px violet;
     transition: all .3s ease; /* Circle shadow */
   }
+  
   .profile-img {
     width: 460px;
     height: 460px;
@@ -83,25 +82,14 @@
 		top: 30px;
    
   }
-	#toggle-page-btn{
-		text-align: center;
-    background-color: white;
-		color: black;
-		border-radius: 5px;
-		font-family: "Roboto Condensed", sans-serif;
-	 font-size: 18px;
-		width: 8vw;
-		text-transform: capitalize;
-		
-  }
 	.icon{
-    display: flex;
-    gap: 2.2vw;
+    display: grid;
+    grid-template-columns: repeat(5,95px);
+    grid-gap: 70px;
     margin-top: 3%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
 
-    
 }
 
 .icon h4{
@@ -132,7 +120,7 @@
 
 .icon h4 a{
     text-decoration: none;
-    color: white;
+    color: black;
     position: relative;
     z-index: 10;
     font-size: 30px;
@@ -224,7 +212,20 @@
     color: white;
 
 }
-	@media only screen and (max-width:578px){ 
+  #toggle-page-btn{
+    background-color:white;
+		color: black;
+		border-radius: 5px;
+		font-family: "Roboto Condensed", sans-serif;
+	 font-size: 18px;
+		width: 8vw;
+		cursor: pointer;
+		text-transform: capitalize;
+		
+  }
+
+		
+		@media only screen and (max-width:578px){ 
 	.navbar-light .navbar-toggler{
 		
 	margin-left: 20rem;
@@ -241,7 +242,21 @@
 			width: 310px;
 			height: 305px;
 		}
+		.icon {
+  
+			display: grid;
+    grid-template-columns: repeat(5,102px);
+		grid-gap: 1px;
+    
+}
 
+	}
+	@media only screen and (max-width:510px){
+		.icon {
+	display: grid;
+grid-template-columns: repeat(5,90px);
+grid-gap: 0px;
+}
 	}
 	
 	</style>
@@ -301,7 +316,7 @@
 									</span>
 								</h1>
 								<p style="text-align: justify;">In my sixth semester of computer engineering school, I am a committed and driven learner who is passionate about using technology to develop original solutions. I've been consistently gaining a solid foundation in hardware, software, and programming through my coursework.I'm eager to apply my knowledge and gain practical experience in the field.</p>
-								<a href="/assets/Rajesh's Resume.pdf"target="_blank"  class="btn btn-secondary banner_btn">View Resume</a>								
+								<a href="/assets/Rajesh's Resume.pdf" target="_blank"  class="btn btn-secondary banner_btn" download>View Resume</a>								
 							</div>
 						</div>
 					  <div class="col-md-6 text-center">
