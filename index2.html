@@ -46,9 +46,11 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 		
 		<!-- Responsive Style -->
-		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">					
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">									
 	<style>
-    body{
+		
+
+	body{
 		font-family: "Roboto Condensed", sans-serif;
 	}
 		.image-container {
@@ -68,11 +70,10 @@
     margin: 0 auto;
     position: relative;
   }
-  .image-circle:hover{
+	.image-circle:hover{
     box-shadow: 0 2px 20px 2px violet;
     transition: all .3s ease; /* Circle shadow */
   }
-  
   .profile-img {
     width: 460px;
     height: 460px;
@@ -82,25 +83,42 @@
 		top: 30px;
    
   }
-  #toggle-page-btn{
-    background-color: black;
+	#toggle-page-btn{
+    background-color: white;
+		color: black;
+		border-radius: 5px;
+		font-family: "Roboto Condensed", sans-serif;
+	 font-size: 1.125rem;
+		width: 5vw;
+		text-transform: capitalize;
+		
   }
-	@media only screen and (max-width: 505px) {
-		.image-circle {
-    width: 350px;
-    height: 350px;}
+	@media only screen and (max-width:578px){ 
+	.navbar-light .navbar-toggler{
+		
+	margin-left: 20rem;
+	margin-top: -2rem;
+	}
+#toggle-page-btn{
+		font-size: 20px;
+		width: 100vw;
+	 }
+	 .image-circle {
+    width: 340px;
+    height: 340px;}
 		.profile-img {
-			width: 320px;
+			width: 310px;
 			height: 305px;
 		}
+
 	}
+	
 	</style>
 	</head>
   
 	<body data-spy="scroll" data-offset="80">
 
-		
-			<!-- START PRELOADER -->
+		<!-- START PRELOADER -->
 			<div class="preloader">
 				<div class="loader">
 					<div class="loader-outter"></div>
@@ -110,11 +128,12 @@
 				
 				</div>
 			</div>
-		<!-- END PRELOADER -->
+		<!-- END PRELOADER -->		
+		
 		<!-- START NAVBAR -->
-			<nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation light_bg_menu">
+			<nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded site-navigation dark_bg_menu">
 				<div class="container">
-					<a class="navbar-brand" href="index2.html"><p>Rajesh</p></a>          
+					<a class="navbar-brand font-effect-fire"><p>Rajesh</p></a>          
 				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 				    </button>
@@ -126,7 +145,7 @@
 						  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>				  			
 						  <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>			
 						  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              <li class="nav-item"><button id="toggle-page-btn" style="width: 35px;height: 5vh; border-radius: 50%; position: absolute; right: -15%; top: -5%;"></button></li> 
+							<li class="nav-item"><button id="toggle-page-btn">Theme</button></li> 
 						</ul>
 				    </div>
 				</div>
@@ -134,7 +153,7 @@
 		<!-- END NAVBAR -->
 		
 		<!-- Hero Area Start -->
-			<section id="home" class="light_bg">
+			<section id="home" class="dark_bg" style="min-height: 100vh;">
 				<div id="particles-js"></div>
 				<div class="container">
 					<div class="row">
@@ -150,8 +169,8 @@
 										<b class="fw_600">Frontend developer</b>
 									</span>
 								</h1>
-								<p style="text-align: justify;">In my fourth semester of computer engineering school, I am a committed and driven learner who is passionate about using technology to develop original solutions. I've been consistently gaining a solid foundation in hardware, software, and programming through my coursework.I'm eager to apply my knowledge and gain practical experience in the field.</p>
-								<a href="#contact" class="btn btn-secondary banner_btn">Hire Me</a>								
+								<p style="text-align: justify;">In my sixth semester of computer engineering school, I am a committed and driven learner who is passionate about using technology to develop original solutions. I've been consistently gaining a solid foundation in hardware, software, and programming through my coursework.I'm eager to apply my knowledge and gain practical experience in the field.</p>
+								<a href="/assets/Rajesh's Resume.pdf"target="_blank"  class="btn btn-secondary banner_btn">View Resume</a>								
 							</div>
 						</div>
 					  <div class="col-md-6 text-center">
@@ -166,9 +185,8 @@
 				
 			</section>
 		<!-- Hero Area End -->
-		<!-- Portfolio Section -->
-   <!--About-->
-		<section id="about" class="light_bg section-padding" >
+		 <!--About-->
+		<section id="about" class="dark_bg section-padding" >
 			<div class="container">
 				<h2 class="section-title wow flipInX" data-wow-delay="0.4s" ><span>About </span>Me</h2>
 				<div class="row">
@@ -176,7 +194,7 @@
 						<div class="banner_content" style="margin-top: 0%;">
 							<h3 class="container">Hi There,</h3>
 							<div class="controls text-center">
-							<p style="text-align: justify;" class="container">
+							<p  class="container" style="text-align: justify; padding: auto;">
 								<span class=" wow fadeInDown" data-wow-delay="0.5s">As a dedicated and ambitious Computer Engineering student in my 6th semester, I am passionate about harnessing the power of technology to create innovative solutions. My coursework has been continuously equipping me with a strong foundation in programming, hardware, and software development. I'm eager to apply my knowledge and gain practical experience in the field.
 								</span>
              <br><br>
@@ -188,12 +206,10 @@
 							</div>			
 						</div>
 					</div>
-			
 			</div>
-  </section>
-	
+		</section>
 		<!-- Portfolio Section -->
-			<section id="portfolio" class="light_bg section-padding">
+			<section id="portfolio" class="dark_bg section-padding">
 				<!-- Container Starts -->
 				<div class="container">        
 					<h2 class="section-title wow flipInX" data-wow-delay="0.4s">My <span>Portfolio</span></h2>
@@ -204,23 +220,19 @@
 							  <a class="filter active btn btn-common" data-filter="all">
 								All 
 							  </a>
-							  <a class="filter btn btn-common" data-filter=".design">
-								Design 
-							  </a>
+							 
 							  <a class="filter btn btn-common" data-filter=".development">
 								Development
 							  </a>
 							  
 							</div>
-             </div>
+							<!-- Portfolio Controller/Buttons Ends-->
 						</div>
-            </div>
-            </section>
-       
+
 						
 		
 		<!-- Services Section Start -->
-		<section id="services" class="light_bg services section-padding">
+		<section id="services" class="dark_bg services section-padding">
 			<h2 class="section-title wow flipInX" data-wow-delay="0.4s">My <span>Services</span></h2>
 			<div class="container">
 				<div class="row">
@@ -283,7 +295,7 @@
 		
 		
 		<!-- START BLOG -->
-			<div id="blog" class="light_bg blog-area section-padding">
+			<div id="blog" class="dark_bg blog-area section-padding">
 				<h2 class="section-title wow flipInX" data-wow-delay="0.4s">My <span>achievements</span></h2>
 				<div class="container">							
 					<div class="row">
@@ -295,7 +307,7 @@
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>
-											"Web developer internship"</h4></a>
+											"Web Design Evolution Insights"</h4></a>
 										<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
 										<span>| Design</span>											
 										<p>Discover the latest advancements shaping the digital landscape, ensuring your online presence stays ahead of the curve.</p>
@@ -348,7 +360,7 @@
 									   <a href="#"><img src="assets/img/b8.jpg" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
-										<a href="#"><h4>"React"</h4></a>
+										<a href="#"><h4>"Interactive Design Trends"</h4></a>
 										<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
 										<span>| Design</span>											
 										<p> Embrace dynamic and engaging design elements that captivate and retain audience attention.</p>
@@ -380,7 +392,7 @@
 									   <a href="#"><img src="assets/img/b2.png" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
-										<a href="#"><h4>"Vouleenter at delta"</h4></a>
+										<a href="#"><h4>"Visual Storytelling Revolution"</h4></a>
 										<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
 										<span>| Design</span>											
 										<p>Harness the power of compelling visuals to communicate narratives that resonate deeply with your audience.</p>
@@ -397,7 +409,7 @@
    
 
 		<!-- Contact Section Start -->
-			<section id="contact" class="light_bg section-padding">      
+			<section id="contact" class="dark_bg section-padding">      
 				<div class="contact-form">
 					<div class="container">
 						<h2 class="section-title wow flipInX" data-wow-delay="0.4s">Contact <span>Us</span></h2>  
@@ -457,12 +469,12 @@
 		<!-- Contact Section End -->
 
 		<!-- Footer Section Start -->
-			<footer class="footer-area" style="background-color: white;">
+			<footer class="footer-area">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-								<p style="color: black;">Copyright &copy; 2024 Rajesh Pandey | All Rights Reserved</p>
+								<p>Copyright &copy; 2024 Rajesh Pandey | All Rights Reserved</p>
 							</div>
 						</div>
 					</div>
@@ -474,6 +486,7 @@
 		<a href="#" class="back-to-top">
 			<i class="fa fa-arrow-up"></i>
 		</a>
+
 
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="assets/js/jquery-min.js"></script>
