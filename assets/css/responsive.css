@@ -123,7 +123,7 @@
 		}
 }
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 505px) { 
 	.banner_content h3{
 		font-size: 18px;
 	}
@@ -148,10 +148,10 @@
 		font-size: 12px;
 	}	
 	.image-circle {
-    width: 240px;
-    height: 240px;}
+    width: 350px;
+    height: 350px;}
 		.profile-img {
-			width: 210px;
-			height: 200px;
+			width: 320px;
+			height: 305px;
 		}
 }
