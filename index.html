@@ -84,11 +84,13 @@
   }
 	.icon{
     display: grid;
-    grid-template-columns: repeat(5,95px);
-    grid-gap: 70px;
-    margin-top: 3%;
+    grid-template-columns: repeat(6,95px);
+    grid-gap: 40px;
+		scroll-snap-type: x mandatory;
+    margin-top: 15%;
     font-size: 1rem;
     position: relative;
+		overflow-x:auto ;
 
 }
 
@@ -123,6 +125,7 @@
     color: black;
     position: relative;
     z-index: 10;
+		scroll-snap-align: start;
     font-size: 30px;
 }
 .icon h4:nth-child(1)::after{ 
@@ -191,6 +194,23 @@
 }
 
  
+.icon h4:nth-child(6)::after{ 
+    color: white;
+    background-color: green;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    border-radius:5px;
+    transition: all ease 0.45s;
+		
+ }
+ .icon h4:nth-child(6):hover:after{
+    bottom: 0;
+    border-radius: 0;
+}
 .icon h4:nth-child(5)::after{ 
     color: white;
     background-color: green;
@@ -242,22 +262,7 @@
 			width: 310px;
 			height: 305px;
 		}
-		.icon {
-  
-			display: grid;
-    grid-template-columns: repeat(5,102px);
-		grid-gap: 1px;
-    
-}
-
-	}
-	@media only screen and (max-width:510px){
-		.icon {
-	display: grid;
-grid-template-columns: repeat(5,90px);
-grid-gap: 0px;
-}
-	}
+	
 	</style>
 	</head>
   
@@ -454,7 +459,7 @@ grid-gap: 0px;
 							<div class="single_blog wow fadeInLeft">
 								<div class="blog-thumb">
 									<div class="blog-image">
-									   <a href="#"><img src="assets/img/b4.png" class="img-responsive" alt=""/></a>
+									   <a href="#"><img src="" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>
@@ -471,7 +476,7 @@ grid-gap: 0px;
 							<div class="single_blog wow fadeInUp">
 								<div class="blog-thumb">
 									<div class="blog-image">
-									   <a href="#"><img src="assets/img/b3.png" class="img-responsive" alt=""/></a>
+									   <a href="#"><img src="" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>"Responsive Design Innovations"</h4></a>
@@ -487,7 +492,7 @@ grid-gap: 0px;
 							<div class="single_blog wow fadeInRight">
 								<div class="blog-thumb">
 									<div class="blog-image">
-									   <a href="#"><img src="assets/img/b5.png" class="img-responsive" alt=""/></a>
+									   <a href="#"><img src="" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>"User-Centric Web Solutions"</h4></a>
@@ -508,7 +513,7 @@ grid-gap: 0px;
 							<div class="single_blog wow fadeInLeft">
 								<div class="blog-thumb">
 									<div class="blog-image">
-									   <a href="#"><img src="assets/img/b8.jpg" class="img-responsive" alt=""/></a>
+									   <a href="#"><img src="" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>"React"</h4></a>
@@ -524,7 +529,7 @@ grid-gap: 0px;
 							<div class="single_blog wow fadeInUp">
 								<div class="blog-thumb">
 									<div class="blog-image">
-									   <a href="#"><img src="assets/img/b7.png" class="img-responsive" alt=""/></a>
+									   <a href="#"><img src="" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>"Creative UI/UX Approaches"</h4></a>
@@ -540,7 +545,7 @@ grid-gap: 0px;
 							<div class="single_blog wow fadeInRight">
 								<div class="blog-thumb">
 									<div class="blog-image">
-									   <a href="#"><img src="assets/img/b2.png" class="img-responsive" alt=""/></a>
+									   <a href="#"><img src="" class="img-responsive" alt=""/></a>
 									</div>
 									<div class="blog-info">
 										<a href="#"><h4>"Vouleenter at delta"</h4></a>
@@ -617,6 +622,7 @@ grid-gap: 0px;
 										<h4><a href="https://www.linkedin.com/in/rajesh-pandey-915649286/"target="_blank" class="fa fa-linkedin-square"></a></h4>
 										<h4><a href="tel:+9779841208969"target="_blank" class="fa fa-whatsapp"></a></h4>
 										<h4><a href="https://github.com/Rajeshp2005"target="_blank" class="fa fa-github"></a></h4>
+										<h4><a href="mailto:imrajesh2005@gmail.com"target="_blank"class="fa fa-envelope"></a></h4>
 										</div>
 								
 							</div>
